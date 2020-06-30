@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+__all__ = ['getlinks']
+
+
 import markdown
-import public
 import re
 
 
-@public.add
 def getlinks(string):
     """return a list with markdown links"""
     html = markdown.markdown(string, output_format='html')
